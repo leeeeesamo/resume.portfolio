@@ -1,0 +1,100 @@
+# Jekyll Configuration
+theme: linkhub-jekyll-theme
+
+# Site Configuration
+name: Leesa Moore's Digital Portfolio
+tagline: Your gateway to my professional world - One hub, all the links you need
+description: Explore my work, connect with me, and discover more.
+author: Leesa Moore
+favicon:
+  path: assets/images/lightbulb.png
+  type: png
+logo: assets/images/TopNotch.png
+url: https://top-notch-solutions.com
+locale: en_GB
+ga4: G-9LJKQM0ZYN 
+
+# Social Links
+social_links:
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/leesa-moore/
+    icon: logos:linkedin
+  - name: Twitter (X)
+    url: https://x.com/leeeeesamo
+    icon: devicon:twitter
+
+# Resumes Section
+resumes:
+  - name: Customer Service Manager Resume
+    url: assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf
+    icon: fa-regular:fa-file-pdf
+    tag: Download PDF
+  - name: IT Manager Resume
+    url: assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
+    icon: fa-regular:fa-file-pdf
+    tag: Download PDF
+
+# Accomplishments Section
+accomplishments:
+  - name: Honor Roll Award Thumbnail
+    url: assets/accomplishments/Honor%20Roll_Award_thumbnail.png
+    icon: fa-regular:fa-award
+    tag: Award
+  - name: Leesa Moore Named to Honor Roll 2022
+    url: assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%202022.png
+    icon: fa-regular:fa-award
+    tag: Honor Roll
+  - name: Leesa Moore Named to Honor Roll July 2022
+    url: assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%20July%202022.png
+    icon: fa-regular:fa-award
+    tag: Recognition
+  - name: Leesa Moore Named to Honor Roll
+    url: assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll.png
+    icon: fa-regular:fa-award
+    tag: Honor Roll
+  - name: Leesa Moore Named to SNHU President's List - 2022
+    url: assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202022.png
+    icon: fa-regular:fa-trophy
+    tag: President's List
+  - name: Leesa Moore Named to SNHU President's List - 2023
+    url: assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
+    icon: fa-regular:fa-trophy
+    tag: President's List
+  - name: President's List Award Thumbnail
+    url: assets/accomplishments/Presidents%20List_Award_Thumbnail.png
+    icon: fa-regular:fa-star
+    tag: Excellence
+  - name: SNHU Announces Honor Roll for 23EW4
+    url: assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW4.png
+    icon: fa-regular:fa-star
+    tag: Achievement
+  - name: SNHU Announces Honor Roll for 23EW6
+    url: assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW6.png
+    icon: fa-regular:fa-star
+    tag: Achievement
+
+# Verified Badge Configuration
+badge:
+  enable: true 
+  icon: ri:verified-badge-fill # Use Iconify design (https://icon-sets.iconify.design/)
+  color: '#dfb221' # Badge color
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude Files/Folders
+exclude:
+  - README.md
+  - Gemfile.lock
+  - .jekyll-cache/
+  - .github/
+  - CHANGELOG.md
+  - Gemfile
+  - LICENSE.txt
+  - funding.yml
+  - linkhub-jekyll-theme.gemspec

@@ -1,0 +1,9 @@
+- name: Twitter
+  url: https://x.com/leeeeesamo
+  icon: ri:twitter-x-fill
+  color: '#1D9BF0'
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/leeeeesamo
+  icon: fab fa-linkedin
+  color: '#0A66C2'
