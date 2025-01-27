@@ -1,16 +1,22 @@
 <section>
     {% for name in site.data.bio %}
-    <details>
+    <details {% if name.display-only == true %}open{% endif %}>
         <summary class="text-center text-error">{{ name.name }}</summary>
         <div class="bio-gallery">
             {% for item in name.items %}
-            <div class="bio-item" {% if name.ratio %}style="aspect-ratio: 9/16;"{% endif %}>
+            <div class="bio-item">
+                {% if name.display-only == true %}
+                <!-- Display-only items (images without links) -->
+                <img class="bio-img text-center" src="{{ item.image }}" alt="{{ item.alt | default: name.name }}" loading="lazy">
+                {% else %}
+                <!-- Items with links -->
                 <a href="{{ item.url }}" target="_blank" aria-label="{{ item.label | default: name.name }}">
-                    <img class="bio-img text-center" src="{{ item.image }}" alt="{{ item.label | default: name.name }}">
+                    <img class="bio-img text-center" src="{{ item.image }}" alt="{{ item.label | default: name.name }}" loading="lazy">
                     {% if item.label %}
                     <p class="text-center">{{ item.label }}</p>
                     {% endif %}
                 </a>
+                {% endif %}
             </div>
             {% endfor %}
         </div>

@@ -11,14 +11,16 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.metadata = {
-  "bug_tracker_uri"   => "https://github.com/digitalmalayali/linkhub-jekyll-theme/issues",
-  "changelog_uri"     => "https://github.com/digitalmalayali/linkhub-jekyll-theme/blob/main/CHANGELOG.md",
-  "documentation_uri" => "https://github.com/digitalmalayali/linkhub-jekyll-theme#readme",
-  "source_code_uri"   => "https://github.com/digitalmalayali/linkhub-jekyll-theme",
-  "funding_uri"       => "https://liberapay.com/zcraber"
-}
+    "bug_tracker_uri"   => "https://github.com/digitalmalayali/linkhub-jekyll-theme/issues",
+    "changelog_uri"     => "https://github.com/digitalmalayali/linkhub-jekyll-theme/blob/main/CHANGELOG.md",
+    "documentation_uri" => "https://github.com/digitalmalayali/linkhub-jekyll-theme#readme",
+    "source_code_uri"   => "https://github.com/digitalmalayali/linkhub-jekyll-theme",
+    "funding_uri"       => "https://liberapay.com/zcraber",
+    "categories"        => "Jekyll, Theme, Linktree Alternative",
+    "tags"              => "jekyll-theme, linktree, minimal-theme"
+  }
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|LICENSE|README|_config\.yml)!i) }
+  spec.files = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|LICENSE|README|_config\.yml)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 4.3"
 

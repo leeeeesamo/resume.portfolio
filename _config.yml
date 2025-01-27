@@ -1,25 +1,28 @@
-# Jekyll
+# Jekyll Configuration
 theme: linkhub-jekyll-theme
 
 # Site Configuration
 name: Leesa Moore's Digital Portfolio
 tagline: Your gateway to my professional world - One hub, all the links you need
 description: Explore my work, connect with me, and discover more.
-favicon:
-  path: assets/images/lightbulb.png
-  type: png
+author: Leesa Moore
 logo: assets/images/TopNotch.png
 url: https://top-notch-solutions.com
 locale: en_GB
 ga4: G-9LJKQM0ZYN
 twitter:
   username: leeeeesamo
-image:
-  path: assets/images/example.jpg
-  type: jpeg
-  height: 100
-  width: 100
-  alt: Leesa Moore's Portfolio
+
+# Favicon Configuration
+favicon:
+  path: assets/images/favicons/favicon.ico
+  type: x-icon
+  alternate_icons:
+    - { path: assets/images/favicons/favicon-32x32.png, type: png, sizes: "32x32" }
+    - { path: assets/images/favicons/favicon-16x16.png, type: png, sizes: "16x16" }
+    - { path: assets/images/favicons/apple-touch-icon.png, type: png, sizes: "180x180" }
+    - { path: assets/images/favicons/android-chrome-192x192.png, type: png, sizes: "192x192" }
+    - { path: assets/images/favicons/android-chrome-512x512.png, type: png, sizes: "512x512" }
 
 # Verified Badge Configuration
 badge:
@@ -41,41 +44,50 @@ resumes:
   - name: Customer Service Manager Resume
     url: assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf
     icon: fa-regular:fa-file-pdf
-    tag: Download
+    tag: Download PDF
   - name: IT Manager Resume
     url: assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
     icon: fa-regular:fa-file-pdf
-    tag: Download
+    tag: Download PDF
 
 # Accomplishments Section
 accomplishments:
   - name: Honor Roll Award Thumbnail
-    url: assets/accomplishments/Honor%20Roll_Award_thumbnail.png
+    image: assets/accomplishments/Honor%20Roll_Award_thumbnail.png
     icon: fa-regular:fa-award
+    tag: Recognition
   - name: Leesa Moore Named to Honor Roll 2022
     url: assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%202022.png
     icon: fa-regular:fa-award
+    tag: Honor Roll
   - name: Leesa Moore Named to Honor Roll July 2022
     url: assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%20July%202022.png
     icon: fa-regular:fa-award
+    tag: Honor Roll
   - name: Leesa Moore Named to Honor Roll
     url: assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll.png
     icon: fa-regular:fa-award
+    tag: Recognition
   - name: Leesa Moore Named to SNHU President's List - 2022
     url: assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202022.png
     icon: fa-regular:fa-trophy
+    tag: President's List
   - name: Leesa Moore Named to SNHU President's List - 2023
     url: assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
     icon: fa-regular:fa-trophy
+    tag: President's List
   - name: President's List Award Thumbnail
-    url: assets/accomplishments/Presidents%20List_Award_Thumbnail.png
+    image: assets/accomplishments/Presidents%20List_Award_Thumbnail.png
     icon: fa-regular:fa-star
+    tag: Excellence
   - name: SNHU Announces Honor Roll for 23EW4
     url: assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW4.png
     icon: fa-regular:fa-star
+    tag: Achievement
   - name: SNHU Announces Honor Roll for 23EW6
     url: assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW6.png
     icon: fa-regular:fa-star
+    tag: Achievement
 
 # Defaults
 defaults:

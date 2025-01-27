@@ -15,3 +15,11 @@
     - url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
       image: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
       label: "President's List 2023"
+
+- name: Thumbnails
+  display-only: true
+  items:
+    - image: /assets/accomplishments/Honor%20Roll_Award_thumbnail.png
+      alt: "Honor Roll Award Thumbnail"
+    - image: /assets/accomplishments/Presidents%20List_Award_Thumbnail.png
+      alt: "President's List Award Thumbnail"
