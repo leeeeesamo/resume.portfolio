@@ -1,22 +1,17 @@
-- name: YouTube Shorts
-  ratio: vertical # For vertical 9:16 aspect ratio. Ideal for video thumbnails, such as those used on Instagram Reels, YouTube Shorts and TikTok. To use the default 1:1 aspect ratio (square), remove this variable.
+- name: Achievements
   items:
-    - url: https://www.example.com
-      image: https://picsum.photos/1080/920.webp
+    - url: /assets/accomplishments/Honor%20Roll_Award_thumbnail.png
+      image: /assets/accomplishments/Honor%20Roll_Award_thumbnail.png
+    - url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
+      image: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
+    - url: /assets/accomplishments/Presidents%20List_Award_Thumbnail.png
+      image: /assets/accomplishments/Presidents%20List_Award_Thumbnail.png
 
-    - url: https://www.example.org
-      image: https://picsum.photos/540/960.webp
-
-    - url: https://www.example.com
-      image: https://picsum.photos/720/1280.webp
-
-- name: Instagram
+- name: Resumes
   items:
-    - url: https://www.example.com
-      image: https://picsum.photos/700/400.webp # You can use paths to images in the assets folder, e.g., assets/images/insta.jpg.
-
-    - url: https://www.example.org
-      image: https://picsum.photos/500.webp
-
-    - url: https://www.example.com
-      image: https://picsum.photos/250/300.webp
+    - url: /assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf
+      image: /assets/images/file-pdf-regular.png
+      label: "Customer Service Manager Resume"
+    - url: /assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
+      image: /assets/images/file-pdf-regular.png
+      label: "IT Manager Resume"

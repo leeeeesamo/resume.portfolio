@@ -7,12 +7,15 @@
     {% endif %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leesa Moore">
     <title>{{ site.tagline }} - {{ site.name }}</title>
     <link rel="shortcut icon" href="{{ site.favicon.path }}" type="image/{{ site.favicon.type }}">
     <link rel="stylesheet" href="assets/style.css">
-    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" integrity="sha384-HG8fFTwZIT8qRSU8BB1D6e5tGBmbE2tJj+oZc/u3G5o2rS5n+12e9FL0PbX7Ohhs" crossorigin="anonymous">
+    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js" defer></script>
     <meta name="description" content="{{ site.description }}">
     <meta property="og:title" content="{{ site.name }}" />
+    <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}" />
@@ -33,7 +36,7 @@
     <div class="container is-full-screen">
         <header>
             <div class="top is-center is-vertical-align">
-                <img class="is-rounded" width="75px" height="75px" src="{{ site.logo }}" alt="logo">
+                <img class="is-rounded" width="75px" height="75px" src="{{ site.logo }}" alt="{{ site.name }} logo">
                 <h1 class="text-center">{{ site.name }}{% if site.badge.enable == true %}<span class="iconify-inline badge"
                         data-icon="{{ site.badge.icon }}" style="color: {{ site.badge.color }}"></span>{% endif %}</h1>
                 <p class="text-center">{{ site.description }}</p>
@@ -46,15 +49,16 @@
         <!-- Social Media Links -->
         {% include social.html %}
 
-        <!-- Insta/TikTok/YouTube Link-in-bio -->
+        <!-- Link-in-bio Gallery -->
         {% include bio.html %}
 
         <!-- Link Buttons -->
         {% include links.html %}
 
+        <!-- Footer -->
         {% include footer.html %}
     </div>
-    <script src="assets/script.js"></script>
+    <script src="assets/script.js" defer></script>
 </body>
 
 </html>

@@ -4,19 +4,14 @@
         <summary class="text-center text-error">{{ name.name }} Link-in-Bio</summary>
         <div class="bio-gallery">
             {% for item in name.items %}
-            {% if name.ratio %}
-            <div class="bio-item" style="aspect-ratio: 9/16;">
-                <a href="{{ item.url }}" target="_blank" aria-label="{{ name.name }} link-in-bio">
-                    <img class="bio-img text-center" src="{{ item.image }}" width="100%" height="100%"
-                        alt="{{ name.name }} post"></a>
+            <div class="bio-item" {% if name.ratio %}style="aspect-ratio: 9/16;"{% endif %}>
+                <a href="{{ item.url }}" target="_blank" aria-label="{{ item.label | default: name.name }}">
+                    <img class="bio-img text-center" src="{{ item.image }}" width="100%" height="100%" alt="{{ item.label | default: name.name }}">
+                    {% if item.label %}
+                    <p class="text-center">{{ item.label }}</p>
+                    {% endif %}
+                </a>
             </div>
-            {% else %}
-            <div class="bio-item">
-                <a href="{{ item.url }}" target="_blank" aria-label="{{ name.name }} link-in-bio">
-                    <img class="bio-img text-center" src="{{ item.image }}" width="100%" height="100%"
-                        alt="{{ name.name }} post"></a>
-            </div>
-            {% endif %}
             {% endfor %}
         </div>
     </details>

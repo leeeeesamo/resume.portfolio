@@ -1,9 +1,8 @@
 <nav class="nav">
     <div class="nav-center">
         {% for social in site.data.social %}
-        <a class="brand" href="{{ social.url }}" target="_blank" aria-label="{{ social.name }}" {% if
-            social.name == "mastodon" %}rel="me" {% endif %}>
-            <span class="iconify-inline" data-icon="{{ social.icon }}" style="color: {{ social.color }}"></span>
+        <a class="brand" href="{{ social.url }}" target="_blank" aria-label="Visit {{ social.name }}">
+            <span class="iconify-inline" data-icon="{{ social.icon }}" style="color: {{ social.color }}; font-size: 1.5em;"></span>
         </a>
         {% endfor %}
     </div>
