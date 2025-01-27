@@ -28,7 +28,7 @@ badge:
 social_links:
   - name: LinkedIn
     url: https://www.linkedin.com/in/leesa-moore/
-    icon: logos:linkedin
+    path: assets/images/linkedin.png
   - name: Twitter (X)
     url: https://x.com/leeeeesamo
     icon: devicon:twitter

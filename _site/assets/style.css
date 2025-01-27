@@ -334,3 +334,25 @@ footer {
 .top img:hover {
     transform: scale(1.1);
 }
+
+.social-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem; /* Adds spacing between icon and text (if any) */
+}
+/* Make the section titles (Resumes, Accomplishments, Social Links) bolder and bigger */
+section details summary {
+    font-weight: bold; /* Makes the font bold */
+    font-size: 1.8rem; /* Adjusts the font size (you can increase or decrease this value) */
+    text-align: center; /* Centers the text */
+    margin-bottom: 1rem; /* Adds spacing below the title */
+    cursor: pointer; /* Adds a pointer cursor to the summary */
+}
+
+/* Optional: Add some visual styling for hover effect */
+section details summary:hover {
+    color: var(--color-primary); /* Changes the color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}

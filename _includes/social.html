@@ -1,9 +1,15 @@
-<nav class="nav">
-    <div class="nav-center">
-        {% for social in site.data.social %}
-        <a class="brand" href="{{ social.url }}" target="_blank" aria-label="Visit {{ social.name }}">
-            <span class="iconify-inline" data-icon="{{ social.icon }}" style="color: {{ social.color }}; font-size: 1.5em;"></span>
-        </a>
+<section class="social-links">
+    <ul>
+        {% for link in site.social_links %}
+        <li>
+            <a href="{{ link.url }}" target="_blank" aria-label="{{ link.name }}">
+                {% if link.path %}
+                <img src="{{ link.path }}" alt="{{ link.name }} logo" class="social-icon">
+                {% else %}
+                <span class="iconify" data-icon="{{ link.icon }}"></span>
+                {% endif %}
+            </a>
+        </li>
         {% endfor %}
-    </div>
-</nav>
+    </ul>
+</section>
