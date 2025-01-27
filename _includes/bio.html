@@ -1,24 +1,32 @@
 <section>
     {% for name in site.data.bio %}
-    <details {% if name.display-only == true %}open{% endif %}>
+    <details {% if name.display-only %}open{% endif %}>
         <summary class="text-center text-error">{{ name.name }}</summary>
         <div class="bio-gallery">
             {% for item in name.items %}
+            {% if name.display-only %}
             <div class="bio-item">
-                {% if name.display-only == true %}
-                <!-- Display-only items (images without links) -->
-                <img class="bio-img text-center" src="{{ item.image }}" alt="{{ item.alt | default: name.name }}" loading="lazy">
-                {% else %}
-                <!-- Items with links -->
+                <img class="bio-img text-center" src="{{ item.image }}" alt="{{ item.alt }}">
+            </div>
+            {% else %}
+            <div class="bio-item">
                 <a href="{{ item.url }}" target="_blank" aria-label="{{ item.label | default: name.name }}">
-                    <img class="bio-img text-center" src="{{ item.image }}" alt="{{ item.label | default: name.name }}" loading="lazy">
+                    <img class="bio-img text-center" src="{{ item.image }}" alt="{{ item.label | default: name.name }}">
                     {% if item.label %}
                     <p class="text-center">{{ item.label }}</p>
                     {% endif %}
                 </a>
-                {% endif %}
             </div>
+            {% endif %}
             {% endfor %}
+
+            <!-- Add the logo beside the award thumbnails -->
+            <div class="bio-item">
+                <a href="https://top-notch-solutions.com" target="_blank" aria-label="Visit Top-Notch Solutions">
+                    <img class="bio-img text-center" src="assets/images/TopNotch.png" alt="Top-Notch Solutions Logo">
+                    <p class="text-center">Visit Top-Notch Solutions</p>
+                </a>
+            </div>
         </div>
     </details>
     {% endfor %}

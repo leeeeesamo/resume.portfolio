@@ -7,7 +7,7 @@ tagline: Your gateway to my professional world - One hub, all the links you need
 description: Explore my work, connect with me, and discover more.
 author: Leesa Moore
 logo: assets/images/TopNotch.png
-url: https://top-notch-solutions.com
+# url: https://top-notch-solutions.com
 locale: en_GB
 ga4: G-9LJKQM0ZYN
 twitter:
@@ -15,14 +15,8 @@ twitter:
 
 # Favicon Configuration
 favicon:
-  path: assets/images/favicons/favicon.ico
-  type: x-icon
-  alternate_icons:
-    - { path: assets/images/favicons/favicon-32x32.png, type: png, sizes: "32x32" }
-    - { path: assets/images/favicons/favicon-16x16.png, type: png, sizes: "16x16" }
-    - { path: assets/images/favicons/apple-touch-icon.png, type: png, sizes: "180x180" }
-    - { path: assets/images/favicons/android-chrome-192x192.png, type: png, sizes: "192x192" }
-    - { path: assets/images/favicons/android-chrome-512x512.png, type: png, sizes: "512x512" }
+  path: assets/images/favicons/favicon-32x32.png
+  type: png
 
 # Verified Badge Configuration
 badge:

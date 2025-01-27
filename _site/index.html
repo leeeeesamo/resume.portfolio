@@ -17,9 +17,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Leesa Moore">
     <title>Your gateway to my professional world - One hub, all the links you need - Leesa Moore's Digital Portfolio</title>
-    <link rel="shortcut icon" href="assets/images/lightbulb.png" type="image/png">
+    
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="assets/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" integrity="sha384-HG8fFTwZIT8qRSU8BB1D6e5tGBmbE2tJj+oZc/u3G5o2rS5n+12e9FL0PbX7Ohhs" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+          integrity="sha384-HG8fFTwZIT8qRSU8BB1D6e5tGBmbE2tJj+oZc/u3G5o2rS5n+12e9FL0PbX7Ohhs" crossorigin="anonymous">
     <script src="https://code.iconify.design/2/2.0.0/iconify.min.js" defer></script>
     <meta name="description" content="Explore my work, connect with me, and discover more.">
     <meta property="og:title" content="Leesa Moore's Digital Portfolio" />
@@ -34,33 +37,54 @@
     <meta property="og:image:height" content="100">
     <meta property="og:image:alt" content="logo">
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@UserName" />
+    <meta name="twitter:site" content="@leeeeesamo" />
     <meta name="twitter:title" content="Leesa Moore's Digital Portfolio" />
     <meta name="twitter:description" content="Explore my work, connect with me, and discover more." />
     <meta name="twitter:image" content="http://localhost:4000/assets/images/example.jpg" />
+		
+    <!-- Favicon for modern browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+
+    <!-- Favicon for older browsers -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicons/favicon.ico">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/assets/images/favicons/apple-touch-icon.png">
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicons/android-chrome-512x512.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
 </head>
 
 <body>
     <div class="container is-full-screen">
         <header>
             <div class="top is-center is-vertical-align">
-                <img class="is-rounded" width="75px" height="75px" src="assets/images/TopNotch.png" alt="Leesa Moore's Digital Portfolio logo">
-                <h1 class="text-center">Leesa Moore's Digital Portfolio<span class="iconify-inline badge"
-                        data-icon="ri:verified-badge-fill" style="color: #dfb221"></span></h1>
+                <!-- Business Logo -->
+                <a href="https://top-notch-solutions.com" target="_blank" aria-label="Top Notch Solutions">
+                    <img class="is-rounded" width="150px" height="150px" src="/assets/images/TopNotch.png" alt="Top Notch Solutions Logo">
+                </a>
+                <h1 class="text-center">Leesa Moore's Digital Portfolio
+                    <span class="iconify-inline badge" data-icon="ri:verified-badge-fill" style="color: #dfb221"></span>
+                </h1>
                 <p class="text-center">Explore my work, connect with me, and discover more.</p>
             </div>
         </header>
 
         <!-- Dark / Light Mode Switch -->
         <a 
-    class="bd-primary is-rounded is-center" 
+    class="bd-primary is-rounded is-center theme-switch" 
     href="#" 
     id="theme-switch" 
     onclick="switchMode(this); return false;" 
     aria-label="Switch Theme" 
     role="button" 
     aria-pressed="false">
-    <span id="theme-icon">☀️</span>
+    <span id="theme-icon" aria-hidden="true">☀️</span>
 </a>
 
 
@@ -83,56 +107,104 @@
         <!-- Link-in-bio Gallery -->
         <section>
     
-    <details>
-        <summary class="text-center text-error">Achievements Link-in-Bio</summary>
+    <details >
+        <summary class="text-center text-error">Resumes</summary>
         <div class="bio-gallery">
             
-            <div class="bio-item" >
-                <a href="/assets/accomplishments/Honor%20Roll_Award_thumbnail.png" target="_blank" aria-label="Achievements">
-                    <img class="bio-img text-center" src="/assets/accomplishments/Honor%20Roll_Award_thumbnail.png" width="100%" height="100%" alt="Achievements">
-                    
-                </a>
-            </div>
             
-            <div class="bio-item" >
-                <a href="/assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png" target="_blank" aria-label="Achievements">
-                    <img class="bio-img text-center" src="/assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png" width="100%" height="100%" alt="Achievements">
-                    
-                </a>
-            </div>
-            
-            <div class="bio-item" >
-                <a href="/assets/accomplishments/Presidents%20List_Award_Thumbnail.png" target="_blank" aria-label="Achievements">
-                    <img class="bio-img text-center" src="/assets/accomplishments/Presidents%20List_Award_Thumbnail.png" width="100%" height="100%" alt="Achievements">
-                    
-                </a>
-            </div>
-            
-        </div>
-    </details>
-    
-    <details>
-        <summary class="text-center text-error">Resumes Link-in-Bio</summary>
-        <div class="bio-gallery">
-            
-            <div class="bio-item" >
+            <div class="bio-item">
                 <a href="/assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf" target="_blank" aria-label="Customer Service Manager Resume">
-                    <img class="bio-img text-center" src="/assets/images/file-pdf-regular.png" width="100%" height="100%" alt="Customer Service Manager Resume">
+                    <img class="bio-img text-center" src="assets/images/file-pdf-regular.png" alt="Customer Service Manager Resume">
                     
                     <p class="text-center">Customer Service Manager Resume</p>
                     
                 </a>
             </div>
             
-            <div class="bio-item" >
+            
+            
+            <div class="bio-item">
                 <a href="/assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf" target="_blank" aria-label="IT Manager Resume">
-                    <img class="bio-img text-center" src="/assets/images/file-pdf-regular.png" width="100%" height="100%" alt="IT Manager Resume">
+                    <img class="bio-img text-center" src="assets/images/file-pdf-regular.png" alt="IT Manager Resume">
                     
                     <p class="text-center">IT Manager Resume</p>
                     
                 </a>
             </div>
             
+            
+
+            <!-- Add the logo beside the award thumbnails -->
+            <div class="bio-item">
+                <a href="https://top-notch-solutions.com" target="_blank" aria-label="Visit Top-Notch Solutions">
+                    <img class="bio-img text-center" src="assets/images/TopNotch.png" alt="Top-Notch Solutions Logo">
+                    <p class="text-center">Visit Top-Notch Solutions</p>
+                </a>
+            </div>
+        </div>
+    </details>
+    
+    <details >
+        <summary class="text-center text-error">Accomplishments</summary>
+        <div class="bio-gallery">
+            
+            
+            <div class="bio-item">
+                <a href="/assets/accomplishments/Honor%20Roll_Award_thumbnail.png" target="_blank" aria-label="Honor Roll Award">
+                    <img class="bio-img text-center" src="/assets/accomplishments/Honor%20Roll_Award_thumbnail.png" alt="Honor Roll Award">
+                    
+                    <p class="text-center">Honor Roll Award</p>
+                    
+                </a>
+            </div>
+            
+            
+            
+            <div class="bio-item">
+                <a href="/assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png" target="_blank" aria-label="President's List 2023">
+                    <img class="bio-img text-center" src="/assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png" alt="President's List 2023">
+                    
+                    <p class="text-center">President's List 2023</p>
+                    
+                </a>
+            </div>
+            
+            
+
+            <!-- Add the logo beside the award thumbnails -->
+            <div class="bio-item">
+                <a href="https://top-notch-solutions.com" target="_blank" aria-label="Visit Top-Notch Solutions">
+                    <img class="bio-img text-center" src="assets/images/TopNotch.png" alt="Top-Notch Solutions Logo">
+                    <p class="text-center">Visit Top-Notch Solutions</p>
+                </a>
+            </div>
+        </div>
+    </details>
+    
+    <details open>
+        <summary class="text-center text-error">Thumbnails</summary>
+        <div class="bio-gallery">
+            
+            
+            <div class="bio-item">
+                <img class="bio-img text-center" src="/assets/accomplishments/Honor%20Roll_Award_thumbnail.png" alt="Honor Roll Award Thumbnail">
+            </div>
+            
+            
+            
+            <div class="bio-item">
+                <img class="bio-img text-center" src="/assets/accomplishments/Presidents%20List_Award_Thumbnail.png" alt="President's List Award Thumbnail">
+            </div>
+            
+            
+
+            <!-- Add the logo beside the award thumbnails -->
+            <div class="bio-item">
+                <a href="https://top-notch-solutions.com" target="_blank" aria-label="Visit Top-Notch Solutions">
+                    <img class="bio-img text-center" src="assets/images/TopNotch.png" alt="Top-Notch Solutions Logo">
+                    <p class="text-center">Visit Top-Notch Solutions</p>
+                </a>
+            </div>
         </div>
     </details>
     
@@ -191,7 +263,7 @@
                     
                     Honor Roll Award
                     
-                    <span class="tag is-small bd-success text-success" style="margin-left: .5em;">Honor Roll 2022</span>
+                    <span class="tag is-small bd-success text-success" style="margin-left: .5em;">2022</span>
                     
                 
             </a>
@@ -204,11 +276,11 @@
                 
                     
                     
-                    <span class="custom-icon" style="margin-right: .5em;"><i class="fa-regular fa-award"></i></span>
+                    <span class="custom-icon" style="margin-right: .5em;"><i class="fa-regular fa-trophy"></i></span>
                     
                     SNHU President's List - 2022
                     
-                    <span class="tag is-small bd-success text-success" style="margin-left: .5em;">Presidents List</span>
+                    <span class="tag is-small bd-success text-success" style="margin-left: .5em;">President's List</span>
                     
                 
             </a>
@@ -221,11 +293,11 @@
                 
                     
                     
-                    <span class="custom-icon" style="margin-right: .5em;"><i class="fa-regular fa-award"></i></span>
+                    <span class="custom-icon" style="margin-right: .5em;"><i class="fa-regular fa-trophy"></i></span>
                     
                     SNHU President's List - 2023
                     
-                    <span class="tag is-small bd-success text-success" style="margin-left: .5em;">Presidents List</span>
+                    <span class="tag is-small bd-success text-success" style="margin-left: .5em;">President's List</span>
                     
                 
             </a>

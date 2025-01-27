@@ -243,18 +243,32 @@ img {
 
 .bio-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjusts the size dynamically */
+    gap: 1rem; /* Adds space between items */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
 }
 
 .bio-item {
     aspect-ratio: 1;
-    margin: 0.2em;
+    margin: 0 auto; /* Centers items in the container */
     overflow: hidden;
+    text-align: center; /* Centers text under the image */
 }
 
 .bio-img {
-    object-fit: cover;
+    object-fit: contain; /* Ensures the image fits well without cropping */
     object-position: center;
+    max-width: 80px; /* Adjust the size of thumbnails and logo */
+    max-height: 80px; /* Adjust the height */
+    margin: 0 auto; /* Centers the image */
+}
+
+.bio-item p {
+    font-size: 0.8rem; /* Adjusts the text size */
+    color: var(--font-color); /* Matches the text color to your theme */
+    margin-top: 0.5rem;
+    text-align: center;
 }
 
 .col.link {
