@@ -1,48 +1,26 @@
-fixed-button-width: false # Set to true/false
-icon-position: left # Set to left/right
+fixed-button-width: false
+icon-position: left
 buttons:
   - category: Resumes
     items:
-    - title: Customer Service Manager Resume
-      url: /assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf
-      custom-icon: <i class="fa-regular fa-file-pdf"></i>
-      tag: Download
+      - title: "Customer Service Manager Resume"
+        url: /assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf
+        icon: fa-regular:fa-file-pdf
+        tag: Download
 
-    - title: IT Manager Resume
-      url: /assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
-      custom-icon: <i class="fa-regular fa-file-pdf"></i>
-      tag: Download
+      - title: "IT Manager Resume"
+        url: /assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
+        icon: fa-regular:fa-file-pdf
+        tag: Download
 
   - category: Accomplishments
     items:
-    - title: Honor Roll Award
-      url: /assets/accomplishments/Honor%20Roll_Award_thumbnail.png
-      custom-icon: <i class="fa-regular fa-award"></i>
-      tag: Honor Roll 2022
+      - title: "Honor Roll Award"
+        url: /assets/accomplishments/Honor%20Roll_Award_thumbnail.png
+        icon: fa-regular:fa-award
+        tag: 2022
 
-    - title: SNHU President's List - 2022
-      url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202022.png
-      custom-icon: <i class="fa-regular fa-award"></i>
-      tag: Presidents List
-
-    - title: SNHU President's List - 2023
-      url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
-      custom-icon: <i class="fa-regular fa-award"></i>
-      tag: Presidents List
-
-    - title: SNHU Honor Roll for 23EW4
-      url: /assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW4.png
-      custom-icon: <i class="fa-regular fa-star"></i>
-      tag: Honor Roll 2023
-
-    - title: SNHU Honor Roll for 23EW6
-      url: /assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW6.png
-      custom-icon: <i class="fa-regular fa-star"></i>
-      tag: Honor Roll 2023
-
-  - category: Social Links
-    items:
-    - title: LinkedIn Profile
-      url: https://www.linkedin.com/in/leeeeesamo
-      custom-icon: <i class="fab fa-linkedin"></i>
-      tag: Connect
+      - title: "President's List 2023"
+        url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
+        icon: fa-regular:fa-trophy
+        tag: 2023
