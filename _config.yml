@@ -5,18 +5,25 @@ theme: linkhub-jekyll-theme
 name: Leesa Moore's Digital Portfolio
 tagline: Your gateway to my professional world - One hub, all the links you need
 description: Explore my work, connect with me, and discover more.
-author: Leesa Moore
-logo: assets/images/TopNotch.png
-# url: https://top-notch-solutions.com
-locale: en_GB
-ga4: G-9LJKQM0ZYN
-twitter:
-  username: leeeeesamo
 
 # Favicon Configuration
 favicon:
   path: assets/images/favicons/favicon-32x32.png
   type: png
+
+# Website Logo Configuration
+image:
+  path: assets/images/TopNotch.png
+  type: png
+  height: 500
+  width: 500
+  alt: Top-Notch-Solutions
+
+locale: en_GB
+ga4: G-9LJKQM0ZYN
+twitter:
+  username: leeeeesamo
+
 
 # Verified Badge Configuration
 badge:
@@ -28,7 +35,7 @@ badge:
 social_links:
   - name: LinkedIn
     url: https://www.linkedin.com/in/leesa-moore/
-    path: assets/images/linkedin.png
+    icon: skill-icons:linkedin
   - name: Twitter (X)
     url: https://x.com/leeeeesamo
     icon: devicon:twitter
@@ -46,10 +53,6 @@ resumes:
 
 # Accomplishments Section
 accomplishments:
-  - name: Honor Roll Award Thumbnail
-    image: assets/accomplishments/Honor%20Roll_Award_thumbnail.png
-    icon: fa-regular:fa-award
-    tag: Recognition
   - name: Leesa Moore Named to Honor Roll 2022
     url: assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%202022.png
     icon: fa-regular:fa-award
@@ -58,7 +61,7 @@ accomplishments:
     url: assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%20July%202022.png
     icon: fa-regular:fa-award
     tag: Honor Roll
-  - name: Leesa Moore Named to Honor Roll
+  - name: Leesa Moore Named to Honor Roll 2023
     url: assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll.png
     icon: fa-regular:fa-award
     tag: Recognition
