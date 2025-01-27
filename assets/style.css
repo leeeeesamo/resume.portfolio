@@ -1,3 +1,4 @@
+/* General Styles */
 :root {
     --bg-color: #fff;
     --bg-secondary-color: #f3f3f6;
@@ -5,12 +6,12 @@
     --color-grey: #3f4144;
     --color-error: #D74747;
     --color-success: #28bd14;
-    --grid-maxWidth: 120rem;
-    --grid-gutter: 2rem;
-    --font-size: 1.6rem;
     --font-color: #333;
     --font-family-sans: -apple-system, "BlinkMacSystemFont", "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+    --font-size: 1.6rem;
+    --grid-maxWidth: 120rem;
+    --grid-gutter: 2rem;
 }
 
 html {
@@ -26,10 +27,10 @@ html {
 
 body {
     background-color: var(--bg-color);
-    line-height: 1.6;
-    font-size: var(--font-size);
     color: var(--font-color);
     font-family: var(--font-family-sans);
+    font-size: var(--font-size);
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
@@ -40,6 +41,7 @@ body.dark {
     --color-primary: #90caf9; /* Lighter blue for dark mode */
 }
 
+/* Headings */
 h1, h2, h3 {
     font-weight: 500;
     margin: 0.35em 0 0.6em;
@@ -47,6 +49,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 1.5em;
+    text-align: center;
 }
 
 h2 {
@@ -57,6 +60,7 @@ h3 {
     font-size: 0.85em;
 }
 
+/* Links */
 a {
     color: var(--color-primary);
     text-decoration: none;
@@ -66,14 +70,19 @@ a:hover:not(.button) {
     opacity: 0.75;
 }
 
-p {
-    margin-top: 0;
-}
-
+/* Images */
 img {
     max-width: 100%;
 }
 
+.bio-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Containers */
 .container {
     max-width: 720px;
     margin: 3em auto 0;
@@ -81,6 +90,7 @@ img {
     padding: 0 calc(var(--grid-gutter) / 2);
 }
 
+/* Rows and Columns */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -94,6 +104,7 @@ img {
     margin: 0 calc(var(--grid-gutter) / 2) calc(var(--grid-gutter) / 2);
 }
 
+/* Buttons */
 .button {
     padding: 1rem 2.5rem;
     color: var(--color-grey);
@@ -131,10 +142,12 @@ img {
     transform: scale(0.98);
 }
 
+/* Placeholder Text */
 ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::-ms-input-placeholder {
     color: #bdbfc4;
 }
 
+/* Navigation */
 .nav {
     min-height: 5rem;
     align-items: stretch;
@@ -160,6 +173,7 @@ img {
     font-size: 1.75em;
 }
 
+/* Tags */
 .tag {
     display: inline-block;
     text-transform: uppercase;
@@ -174,6 +188,7 @@ img {
     font-size: 0.75em;
 }
 
+/* Borders */
 .bd-primary {
     border: 1px solid var(--color-primary) !important;
 }
@@ -182,6 +197,7 @@ img {
     border: 1px solid var(--color-success) !important;
 }
 
+/* Text Alignment */
 .text-grey {
     color: var(--color-grey) !important;
 }
@@ -198,6 +214,7 @@ img {
     text-align: center;
 }
 
+/* Full-Screen Sections */
 .is-full-screen {
     width: 100%;
     min-height: 100vh;
@@ -216,40 +233,59 @@ img {
     border-radius: 100%;
 }
 
-.iconify-inline {
-    margin-right: 0.5em;
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-.iconify-inline.badge {
-    margin-left: 0.3em;
-    margin-right: auto;
+.social-icon {
+    width: 50px;
+    height: 50px;
 }
 
-.custom-icon svg {
-    fill: var(--font-color);
+.social-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
-.top {
-    flex-direction: column;
+/* Details Section */
+details summary {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
 }
 
-#theme-switch {
-    width: 3em;
-    height: 3em;
-    position: fixed;
-    margin: 35rem 0 0;
-    z-index: 1;
+details summary:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
 }
 
-.col.link {
-    position: relative;
+.bio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
+.bio-item {
+    text-align: center;
+}
+
+/* Footer */
 footer {
     margin-top: 0.5em;
     margin-bottom: 2em;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 599px) {
     .bio-gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -266,91 +302,3 @@ footer {
     }
 }
 
-.theme-switch {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background-color: var(--color-primary);
-    color: #fff;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.theme-switch:hover {
-    background-color: var(--color-success);
-    transform: scale(1.1);
-}
-
-.theme-switch:active {
-    transform: scale(0.95);
-}
-
-.button:focus,
-.theme-switch:focus {
-    outline: 2px dashed var(--color-primary);
-    outline-offset: 2px;
-}
-.top img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.top img:hover {
-    transform: scale(1.1);
-}
-/* Center Social Media Links */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem; /* Adds space between icons */
-    margin-bottom: 2rem; /* Adds space below social icons */
-}
-
-.social-icon {
-    width: 32px; /* Adjust size as needed */
-    height: 32px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/* Section Titles (Resumes, Accomplishments) */
-section details summary {
-    font-weight: bold;
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
-
-section details summary:hover {
-    color: var(--color-primary);
-    text-decoration: underline;
-}
-
-/* Thumbnail Gallery */
-.bio-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the size dynamically */
-    gap: 1rem; /* Adds space between thumbnails */
-    justify-content: center;
-    align-items: center;
-}
-
-.bio-img {
-    object-fit: contain;
-    max-width: 80px; /* Adjust the size of thumbnails */
-    max-height: 80px;
-    margin: 0 auto;
-}
-
-.bio-item p {
-    text-align: center;
-    margin-top: 0.5rem;
-    font-size: 0.9rem; /* Adjusts font size below thumbnails */
-}

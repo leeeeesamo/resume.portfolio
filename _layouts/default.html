@@ -7,56 +7,47 @@
     {% endif %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="{{ site.author }}">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="Leesa Moore">
     <title>{{ site.tagline }} - {{ site.name }}</title>
-
-    <!-- Favicon -->
     {% if site.favicon.path %}
-    <link rel="icon" href="{{ site.favicon.path }}" type="image/{{ site.favicon.type }}">
+    <link rel="shortcut icon" href="{{ site.favicon.path }}" type="image/{{ site.favicon.type }}">
     {% endif %}
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        integrity="sha384-HG8fFTwZIT8qRSU8BB1D6e5tGBmbE2tJj+oZc/u3G5o2rS5n+12e9FL0PbX7Ohhs" crossorigin="anonymous">
     <script src="https://code.iconify.design/2/2.0.0/iconify.min.js" defer></script>
-
-    <!-- Open Graph Metadata -->
+    <meta name="description" content="{{ site.description }}">
     <meta property="og:title" content="{{ site.name }}" />
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}" />
-    {% if site.image.path %}
+    <meta property="og:locale" content="{{ site.locale }}" />
     <meta property="og:image" content="{{ site.url }}/{{ site.image.path }}" />
     <meta property="og:image:type" content="image/{{ site.image.type }}" />
     <meta property="og:image:width" content="{{ site.image.width }}">
     <meta property="og:image:height" content="{{ site.image.height }}">
     <meta property="og:image:alt" content="{{ site.image.alt }}">
-    {% endif %}
-
-    <!-- Twitter Metadata -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@{{ site.twitter.username }}" />
     <meta name="twitter:title" content="{{ site.name }}" />
     <meta name="twitter:description" content="{{ site.description }}" />
-    {% if site.image.path %}
     <meta name="twitter:image" content="{{ site.url }}/{{ site.image.path }}" />
-    {% endif %}
 </head>
 
 <body>
     <div class="container is-full-screen">
-        <!-- Header Section -->
         <header>
             <div class="top is-center is-vertical-align">
-                <img class="is-rounded" width="75px" height="75px" src="{{ site.image.path }}" alt="{{ site.image.alt }}">
+                <img class="is-rounded" width="75px" height="75px" src="{{ site.image.path }}"
+                    alt="{{ site.image.alt }}">
                 <h1 class="text-center">{{ site.name }}
-                    {% if site.badge.enable %}
-                    <span class="iconify-inline badge" data-icon="{{ site.badge.icon }}" style="color: {{ site.badge.color }}"></span>
+                    {% if site.badge.enable == true %}
+                    <span class="iconify-inline badge" data-icon="{{ site.badge.icon }}"
+                        style="color: {{ site.badge.color }}"></span>
                     {% endif %}
                 </h1>
-                <p class="text-center">{{ site.tagline }}</p>
+                <p class="text-center">{{ site.description }}</p>
             </div>
         </header>
 
@@ -65,26 +56,21 @@
             <div class="social-links text-center">
                 <a href="https://www.linkedin.com/in/leesa-moore/" target="_blank">
                     <img class="social-icon" src="assets/images/linkedin.png" alt="LinkedIn">
+                    <p class="social-text">LinkedIn</p>
                 </a>
                 <a href="https://x.com/leeeeesamo" target="_blank">
                     <img class="social-icon" src="assets/images/twitter.png" alt="Twitter">
+                    <p class="social-text">Twitter</p>
                 </a>
             </div>
-        </section>
 
-        <!-- Dynamic Content -->
-        <main>
-            {{ content }}
-        </main>
-
-        <!-- Custom Sections -->
-        <section>
             <!-- Resumes -->
             <details>
                 <summary class="text-center text-error">Resumes</summary>
                 <div class="bio-gallery">
                     <div class="bio-item">
-                        <a href="assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf" target="_blank">
+                        <a href="assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf"
+                            target="_blank">
                             <p>Customer Service Manager Resume</p>
                             <p class="button outline">Download</p>
                         </a>
@@ -109,7 +95,7 @@
                         </a>
                     </div>
                     <div class="bio-item">
-                        <a href="assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202022.png" target="_blank">
+                        <a href="assets/accomplishments/Presidents%20List_Award_Thumbnail.png" target="_blank">
                             <p>President's List</p>
                             <p class="button outline">2022</p>
                         </a>
@@ -120,24 +106,21 @@
             <!-- Thumbnails -->
             <div class="bio-gallery">
                 <div class="bio-item">
-                    <img class="bio-img text-center" src="assets/images/TopNotch.png" alt="Top-Notch Solutions Logo">
+                    <img class="bio-img text-center" src="assets/images/TopNotch.png"
+                        alt="Top-Notch Solutions Logo">
                     <p class="text-center">Top-Notch Solutions</p>
                 </div>
                 <div class="bio-item">
-                    <img class="bio-img text-center" src="assets/accomplishments/Honor%20Roll_Award_thumbnail.png" alt="Honor Roll Award">
-                </div>
-                <div class="bio-item">
-                    <img class="bio-img text-center" src="assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202022.png" alt="President's List">
+                    <img class="bio-img text-center" src="assets/accomplishments/Honor%20Roll_Award_thumbnail.png"
+                        alt="Honor Roll Award">
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer>
-            {% include footer.html %}
-        </footer>
+        {% include footer.html %}
     </div>
-    <script src="/assets/script.js" defer></script>
+    <script src="assets/script.js" defer></script>
 </body>
 
 </html>
