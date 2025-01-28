@@ -124,23 +124,22 @@ img { max-width: 100%; }
 :-ms-input-placeholder { color: #bdbfc4; }
 ::-ms-input-placeholder { color: #bdbfc4; }
 
-.nav {
-  min-height: 5rem;
-  display: flex;
-  align-items: stretch;
+.nav-center a {
+  display: inline-block;
+  width: 40px; /* Adjust width for smaller icons */
+  height: 40px; /* Adjust height for smaller icons */
+  text-align: center;
 }
 
-.nav-center {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Add spacing between social media icons */
+.nav-center img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the icon fits within its container */
 }
 
-.nav .brand, .nav a {
-  text-decoration: none;
-  align-items: center;
-  padding: 1rem 0;
-  color: var(--color-grey);
+.nav-center .custom-icon svg {
+  width: 30px; /* Set smaller width for SVG icons */
+  height: 30px; /* Set smaller height for SVG icons */
 }
 
 footer {
