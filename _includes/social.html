@@ -3,9 +3,9 @@
         {% for social in site.data.social %}
         <a class="brand" href="{{ social.url }}" target="_blank" aria-label="{{ social.name }}">
             {% if social.custom-icon %}
-            <span class="iconify-inline">{% raw %}{{{% endraw %} social.custom-icon {% raw %}}}{% endraw %}</span>
+            <span class="custom-icon">{{ social.custom-icon }}</span>
             {% else %}
-            <span class="iconify-inline" data-icon="{{ social.icon }}" style="color: {{ social.color }}"></span>
+            <span class="iconify-inline" data-icon="{{ social.icon }}"></span>
             {% endif %}
         </a>
         {% endfor %}

@@ -173,7 +173,19 @@ footer {
   .nav { flex-direction: column; }
 }
 
-/* NEW STYLES FOR THE UPDATED CONTENT */
+/* NEW STYLES */
+
+/* Labels for Awards and Certifications */
+details > summary {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+details[open] > summary {
+  color: var(--color-primary);
+}
 
 /* Footer company link */
 .footer-company-link {
@@ -193,29 +205,26 @@ footer {
   color: var(--color-grey);
 }
 
-/* Awards and Certifications sections */
-.bio-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1em;
-  margin-top: 1em;
+/* Awards Thumbnails */
+.bio-gallery .bio-item img {
+  max-width: 75px; /* Smaller thumbnails */
+  height: auto;
+  border-radius: 50%; /* Circular appearance */
 }
 
-.bio-item {
-  text-align: center;
-  margin: 0.5em;
-}
-
-.bio-item img {
-  max-width: 100%;
+/* Certifications Images */
+.bio-gallery .bio-item img.certification {
+  max-width: 300px; /* Larger certificates */
+  height: auto;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.bio-item p {
-  margin-top: 0.5em;
-  font-size: 14px;
-  color: var(--color-grey);
+/* Social Media Icons */
+.custom-icon svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 
 /* Enhanced button styles */

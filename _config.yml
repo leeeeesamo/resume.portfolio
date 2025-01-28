@@ -9,8 +9,10 @@ description: "Explore my work, connect with me, and discover more."
 
 # Favicon Configuration
 favicon:
-  path: assets/favicons/apple-touch-icon.png
+  path: assets/favicons/favicon-32x32.png
   type: png
+logo: assets/favicons/apple-touch-icon.png
+# url: https://link.example.com # URL of your website
 
 # Marked up Location
 locale: en_GB
