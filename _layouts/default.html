@@ -9,13 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Leesa Moore">
     <title>{{ site.tagline }} - {{ site.name }}</title>
-    {% if site.favicon.path %}
-    <link rel="shortcut icon" href="{{ site.favicon.path }}" type="image/{{ site.favicon.type }}">
-    {% endif %}
+    <!-- Favicon -->
+    <link rel="icon" type="image/{{ site.favicon.type }}" sizes="32x32" href="{{ site.favicon.path }}">
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
         integrity="sha384-HG8fFTwZIT8qRSU8BB1D6e5tGBmbE2tJj+oZc/u3G5o2rS5n+12e9FL0PbX7Ohhs" crossorigin="anonymous">
     <script src="https://code.iconify.design/2/2.0.0/iconify.min.js" defer></script>
+    <!-- Meta Tags for SEO -->
     <meta name="description" content="{{ site.description }}">
     <meta property="og:title" content="{{ site.name }}" />
     <meta property="og:site_name" content="{{ site.name }}" />
@@ -23,8 +24,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}" />
     <meta property="og:locale" content="{{ site.locale }}" />
-    <meta property="og:image" content="{{ site.url }}/{{ site.image.path }}" />
-    <meta property="og:image:type" content="image/{{ site.image.type }}" />
+    <meta property="og:image" content="{{ site.image.path }}" />
+    <meta property="og:image:type" content="{{ site.image.type }}" />
     <meta property="og:image:width" content="{{ site.image.width }}">
     <meta property="og:image:height" content="{{ site.image.height }}">
     <meta property="og:image:alt" content="{{ site.image.alt }}">
@@ -32,19 +33,16 @@
     <meta name="twitter:site" content="@{{ site.twitter.username }}" />
     <meta name="twitter:title" content="{{ site.name }}" />
     <meta name="twitter:description" content="{{ site.description }}" />
-    <meta name="twitter:image" content="{{ site.url }}/{{ site.image.path }}" />
+    <meta name="twitter:image" content="{{ site.image.path }}" />
 </head>
 
 <body>
     <div class="container is-full-screen">
         <header>
             <div class="top is-center is-vertical-align">
-                <img class="is-rounded" width="75px" height="75px" src="{{ site.image.path }}"
-                    alt="{{ site.image.alt }}">
-                <h1 class="text-center">{{ site.name }}
-                    {% if site.badge.enable == true %}
-                    <span class="iconify-inline badge" data-icon="{{ site.badge.icon }}"
-                        style="color: {{ site.badge.color }}"></span>
+                <img class="is-rounded" width="75px" height="75px" src="{{ site.image.path }}" alt="Logo of {{ site.name }}">
+                <h1 class="text-center">{{ site.name }}{% if site.badge.enable == true %}
+                    <span class="iconify-inline badge" data-icon="{{ site.badge.icon }}" style="color: {{ site.badge.color }}"></span>
                     {% endif %}
                 </h1>
                 <p class="text-center">{{ site.description }}</p>
@@ -52,73 +50,69 @@
         </header>
 
         <!-- Social Media Links -->
-        <section>
-            <div class="social-links text-center">
-                <a href="https://www.linkedin.com/in/leesa-moore/" target="_blank">
-                    <img class="social-icon" src="assets/images/linkedin.png" alt="LinkedIn">
-                    <p class="social-text">LinkedIn</p>
-                </a>
-                <a href="https://x.com/leeeeesamo" target="_blank">
-                    <img class="social-icon" src="assets/images/twitter.png" alt="Twitter">
-                    <p class="social-text">Twitter</p>
-                </a>
-            </div>
-
-            <!-- Resumes -->
-            <details>
-                <summary class="text-center text-error">Resumes</summary>
-                <div class="bio-gallery">
-                    <div class="bio-item">
-                        <a href="assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf"
-                            target="_blank">
-                            <p>Customer Service Manager Resume</p>
-                            <p class="button outline">Download</p>
-                        </a>
-                    </div>
-                    <div class="bio-item">
-                        <a href="assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf" target="_blank">
-                            <p>IT Manager Resume</p>
-                            <p class="button outline">Download</p>
-                        </a>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Accomplishments -->
-            <details>
-                <summary class="text-center text-error">Accomplishments</summary>
-                <div class="bio-gallery">
-                    <div class="bio-item">
-                        <a href="assets/accomplishments/Honor%20Roll_Award_thumbnail.png" target="_blank">
-                            <p>Honor Roll Award</p>
-                            <p class="button outline">2022</p>
-                        </a>
-                    </div>
-                    <div class="bio-item">
-                        <a href="assets/accomplishments/Presidents%20List_Award_Thumbnail.png" target="_blank">
-                            <p>President's List</p>
-                            <p class="button outline">2022</p>
-                        </a>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Thumbnails -->
-            <div class="bio-gallery">
-                <div class="bio-item">
-                    <img class="bio-img text-center" src="assets/images/TopNotch.png"
-                        alt="Top-Notch Solutions Logo">
-                    <p class="text-center">Top-Notch Solutions</p>
-                </div>
-                <div class="bio-item">
-                    <img class="bio-img text-center" src="assets/accomplishments/Honor%20Roll_Award_thumbnail.png"
-                        alt="Honor Roll Award">
-                </div>
-            </div>
+        <section class="social-links text-center">
+            <a href="https://www.linkedin.com/in/leesa-moore/" target="_blank">
+                <img class="social-icon" src="assets/images/logos--linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://x.com/leeeeesamo" target="_blank">
+                <img class="social-icon" src="assets/images/devicon--twitter.png" alt="Twitter">
+            </a>
         </section>
 
+        <!-- Thumbnail Images -->
+        <div class="bio-gallery">
+            <div class="bio-item">
+                <img class="bio-img text-center" src="assets/images/thumbnails/HonorRoll.png" alt="Honor Roll Thumbnail">
+            </div>
+            <div class="bio-item">
+                <img class="bio-img text-center" src="assets/images/thumbnails/PresidentsList.png" alt="President's List Thumbnail">
+            </div>
+        </div>
+
+        <!-- Resumes Section -->
+        <details>
+            <summary class="text-center text-error">Resumes</summary>
+            <div class="bio-gallery">
+                <div class="bio-item">
+                    <a href="assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf" target="_blank">
+                        <img class="bio-img" src="assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
+                        <p>Customer Service Manager Resume</p>
+                        <p class="button outline">Download</p>
+                    </a>
+                </div>
+                <div class="bio-item">
+                    <a href="assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf" target="_blank">
+                        <img class="bio-img" src="assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
+                        <p>IT Manager Resume</p>
+                        <p class="button outline">Download</p>
+                    </a>
+                </div>
+            </div>
+        </details>
+
+        <!-- Accomplishments Section -->
+        <details>
+            <summary class="text-center text-error">Accomplishments</summary>
+            <div class="bio-gallery">
+                <div class="bio-item">
+                    <img class="bio-img text-center" src="assets/accomplishments/Honor%20Roll_Award_thumbnail.png" alt="Honor Roll Award">
+                </div>
+                <div class="bio-item">
+                    <img class="bio-img text-center" src="assets/accomplishments/Presidents%20List_Award_Thumbnail.png" alt="President's List Award">
+                </div>
+            </div>
+        </details>
+
         <!-- Footer -->
-        {% include footer.html %}
+        <footer>
+            <div class="logo-section text-center">
+                <a href="{{ site.url }}" target="_blank">
+                    <img src="{{ site.image.path }}" alt="{{ site.image.alt }}" width="100" height="100">
+                </a>
+                <p><a href="{{ site.url }}" target="_blank">{{ site.image.alt }}</a></p>
+            </div>
+            <small>© {{ "now" | date: "%Y" }} {{ site.name }}</small>
+        </footer>
     </div>
     <script src="assets/script.js" defer></script>
 </body>

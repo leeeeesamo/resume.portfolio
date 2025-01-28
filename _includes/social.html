@@ -1,7 +1,7 @@
 <section class="social-links">
-    <ul>
+    <ul class="text-center"> <!-- Added "text-center" to center-align links -->
         {% for link in site.social_links %}
-        <li>
+        <li style="display: inline-block; margin: 0 1rem;"> <!-- Inline-block for spacing -->
             <a href="{{ link.url }}" target="_blank" aria-label="{{ link.name }}">
                 {% if link.path %}
                 <img src="{{ link.path }}" alt="{{ link.name }} logo" class="social-icon">

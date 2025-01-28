@@ -1,10 +1,10 @@
 - name: Resumes
   items:
     - url: /assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf
-      image: assets/images/file-pdf-regular.png
+      image: assets/images/vscode-icons--file-type-pdf2.png
       label: "Customer Service Manager Resume"
     - url: /assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
-      image: assets/images/file-pdf-regular.png
+      image: assets/images/vscode-icons--file-type-pdf2.png
       label: "IT Manager Resume"
 
 - name: Accomplishments
@@ -19,7 +19,7 @@
 - name: Thumbnails
   display-only: true
   items:
-    - image: /assets/accomplishments/Honor%20Roll_Award_thumbnail.png
+    - image: /assets/thumbnails/Honor%20Roll_Award_thumbnail.png
       alt: "Honor Roll Award Thumbnail"
-    - image: /assets/accomplishments/Presidents%List_Award_Thumbnail.png
+    - image: /assets/thumbnails/Presidents%20List_Award_Thumbnail.png
       alt: "President's List Award Thumbnail"

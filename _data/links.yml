@@ -5,12 +5,12 @@ buttons:
     items:
       - title: "Customer Service Manager Resume"
         url: /assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf
-        custom-icon: <i class="fa-regular fa-file-pdf"></i>
+        custom-icon: <img class="pdf-icon" src="assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
         tag: Download
 
       - title: "IT Manager Resume"
         url: /assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
-        custom-icon: <i class="fa-regular fa-file-pdf"></i>
+        custom-icon: <img class="pdf-icon" src="assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
         tag: Download
 
   - category: Accomplishments
@@ -43,6 +43,10 @@ buttons:
   - category: Social Links
     items:
       - title: "LinkedIn Profile"
-        url: https://www.linkedin.com/in/leeeeesamo
-        custom-icon: <i class="fab fa-linkedin"></i>
+        url: https://www.linkedin.com/in/leesa-moore/
+        custom-icon: <img class="social-icon" src="assets/images/logos--linkedin.png" alt="LinkedIn">
+        tag: Connect
+      - title: "Twitter Profile"
+        url: https://x.com/leeeeesamo
+        custom-icon: <img class="social-icon" src="assets/images/devicon--twitter.png" alt="Twitter">
         tag: Connect

@@ -1,6 +1,6 @@
 <main>
     {% for button in site.data.links.buttons %}
-    <h2 class="text-center">{{ button.category }}</h2>
+    <h2 class="text-center text-bold">{{ button.category }}</h2> <!-- Added "text-bold" for clarity -->
     {% for item in button.items %}
     <div class="row">
         <div class="col is-center {% if item.tag %}link{% endif %}">
