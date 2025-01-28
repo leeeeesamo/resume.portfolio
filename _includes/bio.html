@@ -1,19 +1,19 @@
 <section>
     {% for name in site.data.bio %}
-    <details {% if name.display-only %}open{% endif %}>
+    {% if name.name == "Accomplishments" %}
+    <details>
         <summary class="text-center text-error">{{ name.name }}</summary>
         <div class="bio-gallery">
             {% for item in name.items %}
             <div class="bio-item">
-                <a href="{{ item.url }}" target="_blank" aria-label="{{ item.label | default: name.name }}">
-                    <img class="bio-img text-center" src="{{ item.image }}" alt="{{ item.label | default: name.name }}">
-                    {% if item.label %}
+                <a href="{{ item.url }}" target="_blank" aria-label="{{ item.label }}">
+                    <img class="bio-img" src="{{ item.image }}" alt="{{ item.label }}">
                     <p class="text-center">{{ item.label }}</p>
-                    {% endif %}
                 </a>
             </div>
             {% endfor %}
         </div>
     </details>
+    {% endif %}
     {% endfor %}
 </section>

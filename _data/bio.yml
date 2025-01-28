@@ -19,7 +19,7 @@
 - name: Thumbnails
   display-only: true
   items:
-    - image: /assets/thumbnails/Honor%20Roll_Award_thumbnail.png
-      alt: "Honor Roll Award Thumbnail"
-    - image: /assets/thumbnails/Presidents%20List_Award_Thumbnail.png
-      alt: "President's List Award Thumbnail"
+    - image: /assets/thumbnails/HonorRoll.png
+      alt: "Honor Roll Award"
+    - image: /assets/thumbnails/PresidentsList.png
+      alt: "President's List Award"
