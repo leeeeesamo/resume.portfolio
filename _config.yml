@@ -11,6 +11,14 @@ favicon:
   path: assets/images/favicons/favicon-32x32.png
   type: png
 
+# Website Logo Configuration
+image:
+  path: assets/images/TopNotch.png
+  type: png
+  height: 500
+  width: 500
+  alt: Top-Notch-Solutions
+
 locale: en_GB
 ga4: G-9LJKQM0ZYN
 twitter:
@@ -42,31 +50,29 @@ resumes:
     path: assets/images/vscode-icons--file-type-pdf2.png
     tag: Download PDF
 
+
 # Accomplishments Section
 accomplishments:
   - name: Leesa Moore Named to Honor Roll 2022
-    path: assets/images/thumbnails/Leesa%20Moore%20Named%20to%20Honor%20Roll%202022.png
+    path: assets/images/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%202022.png
     tag: Honor Roll
   - name: Leesa Moore Named to Honor Roll July 2022
-    path: assets/images/thumbnails/Leesa%20Moore%20Named%20to%20Honor%20Roll%20July%202022.png
+    path: assets/images/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%20July%202022.png
     tag: Honor Roll
   - name: Leesa Moore Named to Honor Roll 2023
-    path: assets/images/thumbnails/Leesa%20Moore%20Named%20to%20Honor%20Roll.png
+    path: assets/images/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll.png
     tag: Honor Roll
   - name: Leesa Moore Named to SNHU President's List - 2022
-    path: assets/images/thumbnails/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202022.png
+    path: assets/images/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202022.png
     tag: President's List
   - name: Leesa Moore Named to SNHU President's List - 2023
-    path: assets/images/thumbnails/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
+    path: assets/images/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
     tag: President's List
-  - name: President's List Award Thumbnail
-    path: assets/images/thumbnails/Presidents%20List_Award_Thumbnail.png
-    tag: Excellence
   - name: SNHU Announces Honor Roll for 23EW4
-    path: assets/images/thumbnails/SNHU%20Announces%20Honor%20Roll%20for%2023EW4.png
+    path: assets/images/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW4.png
     tag: Achievement
   - name: SNHU Announces Honor Roll for 23EW6
-    path: assets/images/thumbnails/SNHU%20Announces%20Honor%20Roll%20for%2023EW6.png
+    path: assets/images/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW6.png
     tag: Achievement
 
 # Defaults
