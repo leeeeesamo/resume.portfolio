@@ -196,18 +196,34 @@ details[open] > summary {
 /* Personal Website Link Below Resumes */
 .personal-website-link {
   margin-top: 2em;
-  text-align: left; /* Align content to the left */
+  text-align: left; /* Align content to the left, or use center for centering */
 }
 
 .personal-website-link .website-logo {
-  max-width: 150px; /* Adjust size of the logo */
+  max-width: 120px; /* Reduce the size of the logo */
   height: auto;
   margin-bottom: 1em;
 }
 
 .personal-website-link p {
-  font-size: 1.4rem;
-  color: var(--color-grey);
+  font-size: 1.8rem; /* Increase the font size */
+  font-weight: normal; 
+  color: var(--color-primary); /* Use primary color for consistency */
+}
+
+/* Bold styling for "Top Notch Solutions" */
+.personal-website-link p {
+  font-size: 1.8rem; /* Adjust font size as needed */
+}
+
+.personal-website-link p strong {
+  font-weight: bold;
+  color: var(--color-primary); /* Use primary color for emphasis */
+}
+
+/* Hide social links */
+.social-links {
+  display: none;
 }
 
 /* Awards Thumbnails */
