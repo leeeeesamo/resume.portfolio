@@ -193,6 +193,23 @@ details[open] > summary {
   color: var(--color-grey);
 }
 
+/* Personal Website Link Below Resumes */
+.personal-website-link {
+  margin-top: 2em;
+  text-align: left; /* Align content to the left */
+}
+
+.personal-website-link .website-logo {
+  max-width: 150px; /* Adjust size of the logo */
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.personal-website-link p {
+  font-size: 1.4rem;
+  color: var(--color-grey);
+}
+
 /* Awards Thumbnails */
 .bio-gallery.awards .bio-item img {
   max-width: 100px; /* Slightly larger size for awards */
