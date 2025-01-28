@@ -4,29 +4,12 @@ theme: linkhub-jekyll-theme
 # Site Configuration
 name: Leesa Moore's Digital Portfolio
 tagline: One hub, all the links you need
-description: Explore my work, connect with me, and discover more.
+description: "Explore my work, connect with me, and discover more."
 
 # Favicon Configuration
 favicon:
   path: assets/images/favicons/favicon-32x32.png
   type: png
-
-# Website Logo Configuration
-image:
-  path: assets/images/TopNotch.png
-  type: png
-  height: 500
-  width: 500
-  alt: Top-Notch-Solutions
-
-locale: en_GB
-ga4: G-9LJKQM0ZYN
-
-# Verified Badge Configuration
-badge:
-  enable: true
-  icon: ri:verified-badge-fill
-  color: '#dfb221'
 
 # Social Links
 social_links:
@@ -47,10 +30,9 @@ resumes:
     url: assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
     path: assets/images/vscode-icons--file-type-pdf2.png
     tag: Download PDF
-
-
-- name: Accomplishments
-  items:
+  
+ # Accomplishments Section
+accomplishments:
     - url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%202022.png
       image: /assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%202022.png
       label: "Honor Roll"
@@ -72,6 +54,15 @@ resumes:
     - url: /assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW6.png
       image: /assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW6.png
       label: "Honor Roll"
+
+locale: en_GB
+ga4: G-9LJKQM0ZYN
+
+# Verified Badge Configuration
+badge:
+  enable: true
+  icon: ri:verified-badge-fill
+  color: '#dfb221'
 
 # Defaults
 defaults:

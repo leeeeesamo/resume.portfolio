@@ -230,6 +230,7 @@ GEM
     unicode-display_width (2.6.0)
     uri (1.0.2)
     useragent (0.16.11)
+    wdm (0.2.0)
     webrick (1.9.1)
     websocket-driver (0.7.7)
       base64
@@ -244,6 +245,7 @@ DEPENDENCIES
   jekyll (~> 4.3.4)
   linkhub-jekyll-theme
   rails
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.6.3
