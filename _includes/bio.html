@@ -1,12 +1,15 @@
 <section>
-    {% for section in site.data.bio %}
+    {% for category in site.data.bio %}
     <details>
-        <summary class="text-center text-error">{{ section.name }}</summary>
-        <div class="bio-gallery">
-            {% for item in section.items %}
+        <summary class="text-center text-primary">{{ category.name }}</summary>
+        <div class="bio-gallery {{ category.class }}">
+            {% for item in category.items %}
             <div class="bio-item">
-                <img class="bio-img text-center" src="{{ item.image }}" width="100%" height="100%" alt="{{ item.title }}">
-                <p class="text-center">{{ item.title }}</p>
+                <img 
+                    class="bio-img {{ item.type }}" 
+                    src="{{ item.image }}" 
+                    alt="{{ item.title }}">
+                <p>{{ item.title }}</p>
             </div>
             {% endfor %}
         </div>

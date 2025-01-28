@@ -11,7 +11,7 @@ description: "Explore my work, connect with me, and discover more."
 favicon:
   path: assets/favicons/favicon-32x32.png
   type: png
-logo: assets/favicons/apple-touch-icon.png
+logo: assets/favicons/logo.png
 # url: https://link.example.com # URL of your website
 
 # Marked up Location
@@ -24,7 +24,7 @@ ga4: G-9LJKQM0ZYN
 twitter:
   username: leeeeesamo
 image:
-  path: assets/favicons/apple-touch-icon.png
+  path: assets/favicons/logo.png
   type: png
   height: 100 
   width: 100

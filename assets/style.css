@@ -131,8 +131,9 @@ img { max-width: 100%; }
 }
 
 .nav-center {
-  flex: 1;
+  display: flex;
   justify-content: center;
+  gap: 20px; /* Add spacing between social media icons */
 }
 
 .nav .brand, .nav a {
@@ -162,18 +163,6 @@ footer {
   object-fit: cover;
   object-position: center;
 }
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 599px) {
-  .container { width: 100%; }
-  .col { flex: 0 1 100%; max-width: 100%; }
-}
-
-@media screen and (max-width: 480px) {
-  .nav { flex-direction: column; }
-}
-
-/* NEW STYLES */
 
 /* Labels for Awards and Certifications */
 details > summary {
@@ -206,25 +195,20 @@ details[open] > summary {
 }
 
 /* Awards Thumbnails */
-.bio-gallery .bio-item img {
-  max-width: 75px; /* Smaller thumbnails */
+.bio-gallery.awards .bio-item img {
+  max-width: 100px; /* Slightly larger size for awards */
   height: auto;
   border-radius: 50%; /* Circular appearance */
+  margin: 0 auto; /* Center alignment */
 }
 
-/* Certifications Images */
-.bio-gallery .bio-item img.certification {
-  max-width: 300px; /* Larger certificates */
+/* Certificates Thumbnails */
+.bio-gallery.certifications .bio-item img {
+  max-width: 250px; /* Increase size for certificates */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Social Media Icons */
-.custom-icon svg {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
+  margin: 0 auto; /* Center alignment */
 }
 
 /* Enhanced button styles */
