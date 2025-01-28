@@ -15,25 +15,18 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Leesa Moore">
     <title>One hub, all the links you need - Leesa Moore's Digital Portfolio</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <!-- Styles -->
+    <link rel="shortcut icon" href="assets/favicons/apple-touch-icon.png" type="image/png">
     <link rel="stylesheet" href="assets/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
-        integrity="sha384-HG8fFTwZIT8qRSU8BB1D6e5tGBmbE2tJj+oZc/u3G5o2rS5n+12e9FL0PbX7Ohhs" crossorigin="anonymous">
-    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js" defer></script>
-    <!-- Meta Tags for SEO -->
+    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
     <meta name="description" content="Explore my work, connect with me, and discover more.">
     <meta property="og:title" content="Leesa Moore's Digital Portfolio" />
-    <meta property="og:site_name" content="Leesa Moore's Digital Portfolio" />
     <meta property="og:description" content="Explore my work, connect with me, and discover more.">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://localhost:4000" />
     <meta property="og:locale" content="en_GB" />
-    <meta property="og:image" content="assets/images/example.jpg" />
-    <meta property="og:image:type" content="jpeg" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/example.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="100">
     <meta property="og:image:height" content="100">
     <meta property="og:image:alt" content="logo">
@@ -41,88 +34,199 @@
     <meta name="twitter:site" content="@UserName" />
     <meta name="twitter:title" content="Leesa Moore's Digital Portfolio" />
     <meta name="twitter:description" content="Explore my work, connect with me, and discover more." />
-    <meta name="twitter:image" content="assets/images/example.jpg" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/example.jpg" />
 </head>
 
 <body>
     <div class="container is-full-screen">
+        <!-- Header Section -->
         <header>
             <div class="top is-center is-vertical-align">
-                <img class="is-rounded" width="75px" height="75px" src="assets/images/example.jpg" alt="Logo of Leesa Moore's Digital Portfolio">
-                <h1 class="text-center">Leesa Moore's Digital Portfolio
-                    <span class="iconify-inline badge" data-icon="ri:verified-badge-fill" style="color: #dfb221"></span>
-                    
-                </h1>
+                <img class="is-rounded" width="75px" height="75px" src="https://picsum.photos/200.webp" alt="logo">
+                <h1 class="text-center">Leesa Moore's Digital Portfolio<span class="iconify-inline badge"
+                        data-icon="ri:verified-badge-fill" style="color: #dfb221"></span></h1>
                 <p class="text-center">Explore my work, connect with me, and discover more.</p>
             </div>
         </header>
 
+        <!-- Dark / Light Mode Switch -->
+        <a 
+    class="bd-primary is-rounded is-center theme-switch" 
+    href="#" 
+    id="theme-switch" 
+    onclick="switchMode(this); return false;" 
+    aria-label="Switch Theme" 
+    role="button" 
+    aria-pressed="false">
+    <span id="theme-icon" aria-hidden="true">☀️</span>
+</a>
+
+
         <!-- Social Media Links -->
-        <section class="social-links text-center">
-            <a href="https://www.linkedin.com/in/leesa-moore/" target="_blank">
-                <img class="social-icon" src="assets/images/logos--linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://x.com/leeeeesamo" target="_blank">
-                <img class="social-icon" src="assets/images/devicon--twitter.png" alt="Twitter">
-            </a>
-        </section>
-
-        <!-- Thumbnail Images -->
-        <div class="bio-gallery">
-            <div class="bio-item">
-                <img class="bio-img text-center" src="assets/thumbnails/HonorRoll.png" alt="Honor Roll ">
-            </div>
-            <div class="bio-item">
-                <img class="bio-img text-center" src="assets/thumbnails/PresidentsList.png" alt="President's List">
-            </div>
-        </div>
-
-        <!-- Resumes Section -->
-        <details>
-            <summary class="text-center text-error">Resumes</summary>
-            <div class="bio-gallery">
-                <div class="bio-item">
-                    <a href="assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf" target="_blank">
-                        <img class="bio-img" src="assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
-                        <p>Customer Service Manager Resume</p>
-                        <p class="button outline">Download</p>
-                    </a>
-                </div>
-                <div class="bio-item">
-                    <a href="assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf" target="_blank">
-                        <img class="bio-img" src="assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
-                        <p>IT Manager Resume</p>
-                        <p class="button outline">Download</p>
-                    </a>
-                </div>
-            </div>
-        </details>
-
-        <!-- Accomplishments Section -->
-        <details>
-            <summary class="text-center text-error">Accomplishments</summary>
-            <div class="bio-gallery">
-                <div class="bio-item">
-                    <img class="bio-img text-center" src="assets/accomplishments/Honor%20Roll_Award_thumbnail.png" alt="Honor Roll Award">
-                </div>
-                <div class="bio-item">
-                    <img class="bio-img text-center" src="assets/accomplishments/Presidents%20List_Award_Thumbnail.png" alt="President's List Award">
-                </div>
-            </div>
-        </details>
-
-        <!-- Footer -->
-        <footer>
-            <div class="logo-section text-center">
-                <a href="http://localhost:4000" target="_blank">
-                    <img src="assets/images/example.jpg" alt="logo" width="100" height="100">
-                </a>
-                <p><a href="http://localhost:4000" target="_blank">logo</a></p>
-            </div>
-            <small>© 2025 Leesa Moore's Digital Portfolio</small>
-        </footer>
+        <nav class="nav">
+    <div class="nav-center">
+        
+        <a class="brand" href="https://x.com/leeeeesamo" target="_blank" aria-label="Twitter (X)">
+            
+            <span class="iconify-inline">{{ social.custom-icon }}</span>
+            
+        </a>
+        
+        <a class="brand" href="https://www.linkedin.com/in/leeeeesamo" target="_blank" aria-label="LinkedIn">
+            
+            <span class="iconify-inline">{{ social.custom-icon }}</span>
+            
+        </a>
+        
+        <a class="brand" href="https://github.com/leeeeesamo" target="_blank" aria-label="GitHub">
+            
+            <span class="iconify-inline">{{ social.custom-icon }}</span>
+            
+        </a>
+        
     </div>
-    <script src="assets/script.js" defer></script>
+</nav>
+
+
+        <!-- Link-in-bio Section (Awards & Certifications) -->
+        <section>
+    
+    <details>
+        <summary class="text-center text-error">Awards</summary>
+        <div class="bio-gallery">
+            
+            <div class="bio-item">
+                <img class="bio-img text-center" src="assets/thumbnails/PresidentsList.png" width="100%" height="100%" alt="President's List">
+                <p class="text-center">President's List</p>
+            </div>
+            
+            <div class="bio-item">
+                <img class="bio-img text-center" src="assets/thumbnails/HonorRoll.png" width="100%" height="100%" alt="Honor Roll">
+                <p class="text-center">Honor Roll</p>
+            </div>
+            
+        </div>
+    </details>
+    
+    <details>
+        <summary class="text-center text-error">Certifications</summary>
+        <div class="bio-gallery">
+            
+            <div class="bio-item">
+                <img class="bio-img text-center" src="assets/certificates/HonorSociety_Certificate.png" width="100%" height="100%" alt="Honors Society">
+                <p class="text-center">Honors Society</p>
+            </div>
+            
+            <div class="bio-item">
+                <img class="bio-img text-center" src="assets/certificates/GoogleAds_Certificate.png" width="100%" height="100%" alt="Google Ads Certification">
+                <p class="text-center">Google Ads Certification</p>
+            </div>
+            
+            <div class="bio-item">
+                <img class="bio-img text-center" src="assets/certificates/Excel_Certificate.png" width="100%" height="100%" alt="Microsoft Excel Certification">
+                <p class="text-center">Microsoft Excel Certification</p>
+            </div>
+            
+            <div class="bio-item">
+                <img class="bio-img text-center" src="assets/certificates/Word_Certificate.png" width="100%" height="100%" alt="Microsoft Word Certification">
+                <p class="text-center">Microsoft Word Certification</p>
+            </div>
+            
+        </div>
+    </details>
+    
+</section>
+
+
+        <!-- Resumes and Other Links -->
+        <main>
+    
+    <h2 class="text-center">Resumes</h2>
+    
+    <div class="row">
+        <div class="col is-center">
+            <a class="button outline secondary" href="/assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf" target="_blank">
+                
+                <img class="pdf-icon" src="/assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
+
+                
+                Customer Service Manager Resume
+                
+                <span class="tag is-small bd-success text-success" style="margin-left:.5em;">Download</span>
+                
+            </a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col is-center">
+            <a class="button outline secondary" href="/assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf" target="_blank">
+                
+                <img class="pdf-icon" src="/assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
+
+                
+                IT Manager Resume
+                
+                <span class="tag is-small bd-success text-success" style="margin-left:.5em;">Download</span>
+                
+            </a>
+        </div>
+    </div>
+    
+    
+    <h2 class="text-center">Social Links</h2>
+    
+    <div class="row">
+        <div class="col is-center">
+            <a class="button outline secondary" href="https://linkedin.com/in/leeeeesamo" target="_blank">
+                
+                <span class="iconify-inline" data-icon="ri:linkedin-box-fill"></span>
+                
+                LinkedIn
+                
+            </a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col is-center">
+            <a class="button outline secondary" href="https://github.com/leeeeesamo" target="_blank">
+                
+                <span class="iconify-inline" data-icon="ri:github-fill"></span>
+                
+                GitHub
+                
+            </a>
+        </div>
+    </div>
+    
+    
+</main>
+
+
+        <!-- Footer Section -->
+        <footer class="text-center">
+    <!-- Existing attribution -->
+    <small class="text-grey">
+        Powered by <a href="https://github.com/digitalmalayali/linkhub-jekyll-theme" target="_blank">Linkhub</a> v0.1.6. Code is licensed under <a href="https://github.com/digitalmalayali/linkhub-jekyll-theme/blob/main/LICENSE.txt" target="_blank">MIT</a>.
+    </small>
+
+    <!-- Company Logo and Link -->
+    <div class="footer-company-link">
+        <a href="https://top-notch-solutions.com" target="_blank" aria-label="Visit Top-Notch Solutions">
+            <img src="/assets/images/TopNotch.png" alt="Top-Notch Solutions Logo" style="width: 120px; height: auto;">
+        </a>
+        <p>Visit <strong>Top-Notch Solutions</strong> for more!</p>
+    </div>
+
+    <!-- Copyright Info -->
+    <h3>© 2025 Leesa Moore's Digital Portfolio</h3>
+</footer>
+
+    </div>
+
+    <!-- Include Script File -->
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

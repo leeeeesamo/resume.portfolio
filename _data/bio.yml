@@ -1,25 +1,19 @@
-- name: Resumes
+- name: Awards
+  ratio: static
   items:
-    - url: /assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf
-      image: assets/images/vscode-icons--file-type-pdf2.png
-      label: "Customer Service Manager Resume"
-    - url: /assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
-      image: assets/images/vscode-icons--file-type-pdf2.png
-      label: "IT Manager Resume"
+    - image: assets/thumbnails/PresidentsList.png
+      title: "President's List"
+    - image: assets/thumbnails/HonorRoll.png
+      title: "Honor Roll"
 
-- name: Accomplishments
+- name: Certifications
+  ratio: static
   items:
-    - url: /assets/accomplishments/Honor%20Roll_Award_thumbnail.png
-      image: /assets/accomplishments/Honor%20Roll_Award_thumbnail.png
-      label: "Honor Roll Award"
-    - url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
-      image: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
-      label: "President's List 2023"
-
-- name: Thumbnails
-  display-only: true
-  items:
-    - url: /assets/thumbnails/HonorRoll.png
-      alt: "Honor Roll Award"
-    - url: /assets/thumbnails/PresidentsList.png
-      alt: "President's List Award"
+    - image: assets/certificates/HonorSociety_Certificate.png
+      title: "Honors Society"
+    - image: assets/certificates/GoogleAds_Certificate.png
+      title: "Google Ads Certification"
+    - image: assets/certificates/Excel_Certificate.png
+      title: "Microsoft Excel Certification"
+    - image: assets/certificates/Word_Certificate.png
+      title: "Microsoft Word Certification"

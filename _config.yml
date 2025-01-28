@@ -1,5 +1,6 @@
 # Jekyll Configuration
 theme: linkhub-jekyll-theme
+baseurl: "/resume.portfolio"
 
 # Site Configuration
 name: Leesa Moore's Digital Portfolio
@@ -8,62 +9,31 @@ description: "Explore my work, connect with me, and discover more."
 
 # Favicon Configuration
 favicon:
-  path: assets/images/favicons/favicon-32x32.png
+  path: assets/favicons/apple-touch-icon.png
   type: png
 
-# Social Links
-social_links:
-  - name: LinkedIn
-    url: https://www.linkedin.com/in/leesa-moore/
-    path: assets/images/logos--linkedin.png
-  - name: Twitter (X)
-    url: https://x.com/leeeeesamo
-    path: assets/images/devicon--twitter.png
-
-# Resumes Section
-resumes:
-  - name: Customer Service Manager Resume
-    url: assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf
-    path: assets/images/vscode-icons--file-type-pdf2.png
-    tag: Download PDF
-  - name: IT Manager Resume
-    url: assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf
-    path: assets/images/vscode-icons--file-type-pdf2.png
-    tag: Download PDF
-  
- # Accomplishments Section
-accomplishments:
-    - url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%202022.png
-      image: /assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%202022.png
-      label: "Honor Roll"
-    - url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%20July%202022.png
-      image: /assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll%20July%202022.png
-      label: "Honor Roll"
-    - url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll.png
-      image: /assets/accomplishments/Leesa%20Moore%20Named%20to%20Honor%20Roll.png
-      label: "Honor Roll"
-    - url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202022.png
-      image: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202022.png
-      label: "President's List 2022"
-    - url: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
-      image: /assets/accomplishments/Leesa%20Moore%20Named%20to%20SNHU%20President's%20List%20-%202023.png
-      label: "President's List 2023"
-    - url: /assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW4.png
-      image: /assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW4.png
-      label: "Honor Roll"
-    - url: /assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW6.png
-      image: /assets/accomplishments/SNHU%20Announces%20Honor%20Roll%20for%2023EW6.png
-      label: "Honor Roll"
-
+# Marked up Location
 locale: en_GB
+
+# Google Analytics ID
 ga4: G-9LJKQM0ZYN
 
+# Used for SEO
+twitter:
+  username: leeeeesamo
+image:
+  path: assets/favicons/apple-touch-icon.png
+  type: png
+  height: 100 
+  width: 100
+  alt: logo
+  
 # Verified Badge Configuration
 badge:
   enable: true
   icon: ri:verified-badge-fill
   color: '#dfb221'
-
+  
 # Defaults
 defaults:
   -
@@ -73,13 +43,4 @@ defaults:
       layout: "default"
 
 # Exclude
-exclude:
-  - README.md
-  - Gemfile.lock
-  - .jekyll-cache/
-  - .github/
-  - CHANGELOG.md
-  - Gemfile
-  - LICENSE.txt
-  - funding.yml
-  - linkhub-jekyll-theme.gemspec
+exclude: [README.md, Gemfile.lock, .jekyll-cache/, .github/, CHANGELOG.md, Gemfile, LICENSE.txt, funding.yml, linkhub-jekyll-theme.gemspec, .a_archived]

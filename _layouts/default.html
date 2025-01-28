@@ -7,25 +7,18 @@
     {% endif %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Leesa Moore">
     <title>{{ site.tagline }} - {{ site.name }}</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/{{ site.favicon.type }}" sizes="32x32" href="{{ site.favicon.path }}">
-    <!-- Styles -->
+    <link rel="shortcut icon" href="{{ site.favicon.path }}" type="image/{{ site.favicon.type }}">
     <link rel="stylesheet" href="assets/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
-        integrity="sha384-HG8fFTwZIT8qRSU8BB1D6e5tGBmbE2tJj+oZc/u3G5o2rS5n+12e9FL0PbX7Ohhs" crossorigin="anonymous">
-    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js" defer></script>
-    <!-- Meta Tags for SEO -->
+    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
     <meta name="description" content="{{ site.description }}">
     <meta property="og:title" content="{{ site.name }}" />
-    <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}" />
     <meta property="og:locale" content="{{ site.locale }}" />
-    <meta property="og:image" content="{{ site.image.path }}" />
-    <meta property="og:image:type" content="{{ site.image.type }}" />
+    <meta property="og:image" content="{{ site.url }}/{{ site.image.path }}" />
+    <meta property="og:image:type" content="image/{{ site.image.type }}" />
     <meta property="og:image:width" content="{{ site.image.width }}">
     <meta property="og:image:height" content="{{ site.image.height }}">
     <meta property="og:image:alt" content="{{ site.image.alt }}">
@@ -33,88 +26,39 @@
     <meta name="twitter:site" content="@{{ site.twitter.username }}" />
     <meta name="twitter:title" content="{{ site.name }}" />
     <meta name="twitter:description" content="{{ site.description }}" />
-    <meta name="twitter:image" content="{{ site.image.path }}" />
+    <meta name="twitter:image" content="{{ site.url }}/{{ site.image.path }}" />
 </head>
 
 <body>
     <div class="container is-full-screen">
+        <!-- Header Section -->
         <header>
             <div class="top is-center is-vertical-align">
-                <img class="is-rounded" width="75px" height="75px" src="{{ site.image.path }}" alt="Logo of {{ site.name }}">
-                <h1 class="text-center">{{ site.name }}{% if site.badge.enable == true %}
-                    <span class="iconify-inline badge" data-icon="{{ site.badge.icon }}" style="color: {{ site.badge.color }}"></span>
-                    {% endif %}
-                </h1>
+                <img class="is-rounded" width="75px" height="75px" src="{{ site.logo }}" alt="logo">
+                <h1 class="text-center">{{ site.name }}{% if site.badge.enable == true %}<span class="iconify-inline badge"
+                        data-icon="{{ site.badge.icon }}" style="color: {{ site.badge.color }}"></span>{% endif %}</h1>
                 <p class="text-center">{{ site.description }}</p>
             </div>
         </header>
 
+        <!-- Dark / Light Mode Switch -->
+        {% include theme-switch.html %}
+
         <!-- Social Media Links -->
-        <section class="social-links text-center">
-            <a href="https://www.linkedin.com/in/leesa-moore/" target="_blank">
-                <img class="social-icon" src="assets/images/logos--linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://x.com/leeeeesamo" target="_blank">
-                <img class="social-icon" src="assets/images/devicon--twitter.png" alt="Twitter">
-            </a>
-        </section>
+        {% include social.html %}
 
-        <!-- Thumbnail Images -->
-        <div class="bio-gallery">
-            <div class="bio-item">
-                <img class="bio-img text-center" src="assets/thumbnails/HonorRoll.png" alt="Honor Roll ">
-            </div>
-            <div class="bio-item">
-                <img class="bio-img text-center" src="assets/thumbnails/PresidentsList.png" alt="President's List">
-            </div>
-        </div>
+        <!-- Link-in-bio Section (Awards & Certifications) -->
+        {% include bio.html %}
 
-        <!-- Resumes Section -->
-        <details>
-            <summary class="text-center text-error">Resumes</summary>
-            <div class="bio-gallery">
-                <div class="bio-item">
-                    <a href="assets/resumes/Leesa%20Moore_2025%20Resume_Customer%20Service%20Manager.pdf" target="_blank">
-                        <img class="bio-img" src="assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
-                        <p>Customer Service Manager Resume</p>
-                        <p class="button outline">Download</p>
-                    </a>
-                </div>
-                <div class="bio-item">
-                    <a href="assets/resumes/Leesa%20Moore_2025%20Resume_IT%20Manager.pdf" target="_blank">
-                        <img class="bio-img" src="assets/images/vscode-icons--file-type-pdf2.png" alt="PDF Icon">
-                        <p>IT Manager Resume</p>
-                        <p class="button outline">Download</p>
-                    </a>
-                </div>
-            </div>
-        </details>
+        <!-- Resumes and Other Links -->
+        {% include links.html %}
 
-        <!-- Accomplishments Section -->
-        <details>
-            <summary class="text-center text-error">Accomplishments</summary>
-            <div class="bio-gallery">
-                <div class="bio-item">
-                    <img class="bio-img text-center" src="assets/accomplishments/Honor%20Roll_Award_thumbnail.png" alt="Honor Roll Award">
-                </div>
-                <div class="bio-item">
-                    <img class="bio-img text-center" src="assets/accomplishments/Presidents%20List_Award_Thumbnail.png" alt="President's List Award">
-                </div>
-            </div>
-        </details>
-
-        <!-- Footer -->
-        <footer>
-            <div class="logo-section text-center">
-                <a href="{{ site.url }}" target="_blank">
-                    <img src="{{ site.image.path }}" alt="{{ site.image.alt }}" width="100" height="100">
-                </a>
-                <p><a href="{{ site.url }}" target="_blank">{{ site.image.alt }}</a></p>
-            </div>
-            <small>© {{ "now" | date: "%Y" }} {{ site.name }}</small>
-        </footer>
+        <!-- Footer Section -->
+        {% include footer.html %}
     </div>
-    <script src="assets/script.js" defer></script>
+
+    <!-- Include Script File -->
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

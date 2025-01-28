@@ -1,15 +1,13 @@
-<section class="social-links">
-    <ul class="text-center"> <!-- Added "text-center" to center-align links -->
-        {% for link in site.social_links %}
-        <li style="display: inline-block; margin: 0 1rem;"> <!-- Inline-block for spacing -->
-            <a href="{{ link.url }}" target="_blank" aria-label="{{ link.name }}">
-                {% if link.path %}
-                <img src="{{ link.path }}" alt="{{ link.name }} logo" class="social-icon">
-                {% else %}
-                <span class="iconify" data-icon="{{ link.icon }}"></span>
-                {% endif %}
-            </a>
-        </li>
+<nav class="nav">
+    <div class="nav-center">
+        {% for social in site.data.social %}
+        <a class="brand" href="{{ social.url }}" target="_blank" aria-label="{{ social.name }}">
+            {% if social.custom-icon %}
+            <span class="iconify-inline">{% raw %}{{{% endraw %} social.custom-icon {% raw %}}}{% endraw %}</span>
+            {% else %}
+            <span class="iconify-inline" data-icon="{{ social.icon }}" style="color: {{ social.color }}"></span>
+            {% endif %}
+        </a>
         {% endfor %}
-    </ul>
-</section>
+    </div>
+</nav>
