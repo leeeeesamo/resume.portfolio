@@ -1,2 +1,92 @@
----
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LJKQM0ZYN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9LJKQM0ZYN');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leesa Moore's Digital Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <div class="top is-center is-vertical-align">
+            <img class="is-rounded" width="75px" height="75px" src="assets/favicons/logo.png" alt="logo">
+            <h1>Leesa Moore's Digital Portfolio</h1>
+            <p>One hub, all the links you need</p>
+        </div>
+    </header>
+    
+    <!-- Dark / Light Mode Switch -->
+    <a class="bd-primary is-rounded is-center theme-switch" href="#" id="theme-switch" onclick="switchMode(this); return false;" role="button">
+        <span id="theme-icon">☀️</span>
+    </a>
+    
+    <!-- Social Media Links -->
+    <nav class="nav">
+        <div class="nav-center">
+            <a class="brand" href="#" target="_blank">🔗 Social</a>
+        </div>
+    </nav>
+    
+    <!-- Resume Links -->
+    <section class="container">
+        <h2>Resumes</h2>
+        <div class="row">
+            <a class="button outline secondary" href="assets/resumes/CustomerServiceManager_2025Resume.pdf" download>Customer Service Manager Resume</a>
+            <a class="button outline secondary" href="assets/resumes/ITManager_2025Resume.pdf" download>IT Manager Resume</a>
+        </div>
+    </section>
+    
+    <!-- Awards & Certifications -->
+    <section class="container">
+        <h2>Awards</h2>
+        <div class="bio-gallery awards">
+            <div class="bio-item">
+                <img src="assets/thumbnails/PresidentsList.png" alt="President's List">
+                <p>President's List</p>
+            </div>
+            <div class="bio-item">
+                <img src="assets/thumbnails/HonorRoll.png" alt="Honor Roll">
+                <p>Honor Roll</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2>Certifications</h2>
+        <div class="bio-gallery certifications">
+            <div class="bio-item">
+                <img src="assets/certificates/HonorSociety_Certificate.png" alt="Honors Society">
+                <p>Honors Society</p>
+            </div>
+            <div class="bio-item">
+                <img src="assets/certificates/GoogleAds_Certificate.png" alt="Google Ads Certification">
+                <p>Google Ads Certification</p>
+            </div>
+            <div class="bio-item">
+                <img src="assets/certificates/Excel_Certificate.png" alt="Microsoft Excel Certification">
+                <p>Microsoft Excel Certification</p>
+            </div>
+            <div class="bio-item">
+                <img src="assets/certificates/Word_Certificate.png" alt="Microsoft Word Certification">
+                <p>Microsoft Word Certification</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Leesa Moore | <a href="https://leeeeesamo.github.io/resume.portfolio/">Portfolio Home</a></p>
+    </footer>
+</body>
+</html>
